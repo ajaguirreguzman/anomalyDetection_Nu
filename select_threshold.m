@@ -1,5 +1,5 @@
 
-function [epsilon,F1]=selectThreshold(y_valid,p_valid)
+function [epsilon,F1]=select_threshold(y_valid,p_valid)
 
 % initialise
 bestF1=0;
