@@ -3,6 +3,10 @@
 %% Initialise
 clear ; close all; clc
 
+%% Visualise plots interactively?
+
+visibility='on';
+
 %% Read and plot data
 fprintf('Plotting data ...\n')
 data=load('nusse2.out');
@@ -10,13 +14,13 @@ x1=data(:,1); % time
 x2=data(:,2); % nusselt
 
 % plot time
-fig_time = figure('visible','off');
+fig_time = figure('visible',visibility);
 ax1 = gca;
 plot(ax1,x1);
 hold on
 
 % plot heat transport
-fig_heat = figure('visible','off');
+fig_heat = figure('visible',visibility);
 ax2=gca;
 scatter(ax2,x1,x2,'.');
 hold on
@@ -40,14 +44,14 @@ saveas(fig_time,'fig_simulationTime_per_iteration','epsc')
 
 xlabel(ax2,'Simulation time')
 ylabel(ax2,'Heat transport')
-title(ax2,'Heat transport time series')
+title(ax2,'Heat transport vs. time advancement')
 legend(ax2,'Original','Filtered (possible discontinuities fixed)')
 saveas(fig_heat,'fig_heat_transport','epsc')
 
 
 %% Plot histogram, just to understand the data
 
-fig_histo = figure('visible','off');
+fig_histo = figure('visible',visibility);
 histogram(x2f,250,'Normalization','probability')
 xlabel('Heat transport')
 ylabel('Frequency (%)')
@@ -56,7 +60,7 @@ saveas(fig_histo,'fig_histogram','epsc')
 %% Flag anomalous data
 
 % Time at which the transitory state starts
-start_transitory=20;
+start_transitory=30;
 
 % anomalous data
 x1f_anom=x1f(x1f<start_transitory);
@@ -68,12 +72,15 @@ x2f_good=x2f(x1f>=start_transitory);
 
 %% Plot flagged anomalous and good data
 
-fig_flagged = figure('visible','off');
+fig_flagged = figure('visible',visibility);
 scatter(x1f_anom,x2f_anom,'r.'); hold on
 scatter(x1f_good,x2f_good,'b.');
 xlabel('Simulation time')
 ylabel('Heat transport')
+title('Data flagged as anomalous and as not anomalous')
+legend('Anomalous','Not anomalous')
 saveas(fig_flagged,'fig_flagged_data','epsc')
+
 
 %% Shuffle anomalous data
 %shuffled_idxs=randperm(length(x2f_anom));
@@ -137,7 +144,7 @@ x2_valid_rand=x2_valid;%(shuffled_idxs);
 p_valid_rand=p_valid;%(shuffled_idxs);
 
 % plot data
-fig_val = figure('visible','off');
+fig_val = figure('visible',visibility);
 plot(x2_valid_rand(p_valid_rand<epsilon),'r.'); hold on
 plot(x2_valid_rand(p_valid_rand>=epsilon),'b.');
 
@@ -161,7 +168,7 @@ x2_test_rand=x2_test(shuffled_idxs);
 p_test_rand=p_test(shuffled_idxs);
 
 % plot data
-fig_test = figure('visible','off');
+fig_test = figure('visible',visibility);
 plot(x2_test_rand(p_test_rand<epsilon),'r.'); hold on
 plot(x2_test_rand(p_test_rand>=epsilon),'b.');
 
