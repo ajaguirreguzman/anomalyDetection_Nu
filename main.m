@@ -8,16 +8,15 @@ fprintf('Plotting data ...\n')
 data=load('nusse2.out');
 x1=data(:,1); % time
 x2=data(:,2); % nusselt
-m=length(x2); % number of training examples
 
-% plot x1
-figure
-ax1=gca;
+% plot time
+fig_time = figure('visible','off');
+ax1 = gca;
 plot(ax1,x1);
 hold on
 
-% plot x2
-figure
+% plot heat transport
+fig_heat = figure('visible','off');
 ax2=gca;
 scatter(ax2,x1,x2,'.');
 hold on
@@ -26,51 +25,61 @@ hold on
 
 [x1f,x2f]=fixtimedisc(x1,x2);
 
-% plot filtered x1
+% add filtered x1 data to previous plot
 plot(ax1,x1f);
 
-% plot filtered x2
+% add filtered x2 data to previous plot
 scatter(ax2,x1f,x2f,'.');
 
-%% Plot histogram
+% plots title, labels, etc.
+xlabel(ax1,'Number of iterations')
+ylabel(ax1,'Simulation time')
+title(ax1,'Simulation time per iteration')
+legend(ax1,'Original','Filtered (possible discontinuities fixed)')
+saveas(fig_time,'fig_simulationTime_per_iteration','epsc')
 
-figure
-histogram(x2f,250)
+xlabel(ax2,'Simulation time')
+ylabel(ax2,'Heat transport')
+title(ax2,'Heat transport time series')
+legend(ax2,'Original','Filtered (possible discontinuities fixed)')
+saveas(fig_heat,'fig_heat_transport','epsc')
 
-%% Parameter estimation: mean, variance
 
-[mu,sigma2]=fitparam(x2f);
-fprintf('Mean     = %f\n',mu)
-fprintf('Variance = %f\n',sigma2)
+%% Plot histogram, just to understand the data
 
-%% Probability density function
+fig_histo = figure('visible','off');
+histogram(x2f,250,'Normalization','probability')
+xlabel('Heat transport')
+ylabel('Frequency (%)')
+saveas(fig_histo,'fig_histogram','epsc')
 
-p=gaussian(x2f,mu,sigma2);
+%% Flag anomalous data
 
-%% Flag anomalous based on manually chosen threshold
-
-% threshold
-epsilon=0.001;
+% Time at which the transitory state starts
+start_transitory=20;
 
 % anomalous data
-x1f_anom=x1f(p<epsilon);
-x2f_anom=x2f(p<epsilon);
+x1f_anom=x1f(x1f<start_transitory);
+x2f_anom=x2f(x1f<start_transitory);
 
 % good data
-x1f_good=x1f(p>=epsilon);
-x2f_good=x2f(p>=epsilon);
+x1f_good=x1f(x1f>=start_transitory);
+x2f_good=x2f(x1f>=start_transitory);
 
-%% Plot flagged anomalous and not anomalous data
+%% Plot flagged anomalous and good data
 
-figure
+fig_flagged = figure('visible','off');
 scatter(x1f_anom,x2f_anom,'r.'); hold on
 scatter(x1f_good,x2f_good,'b.');
+xlabel('Simulation time')
+ylabel('Heat transport')
+saveas(fig_flagged,'fig_flagged_data','epsc')
 
 %% Shuffle anomalous data
-shuffled_idxs=randperm(length(x2f_anom));
-x2f_anom=x2f_anom(shuffled_idxs);
+%shuffled_idxs=randperm(length(x2f_anom));
+%x2f_anom=x2f_anom(shuffled_idxs);
 
-%% Data preparation: training, validation and test data sets
+%% Split data into training, validation and test sets
 
 % indices for 60%/20%/20% subsets of good data
 m=length(x1f_good);
@@ -104,14 +113,15 @@ y_test=[zeros(1,length(subset3_good)), ones(1,length(subset2_anom))];
 %% Fit model on training set
 
 [mu,sigma2]=fitparam(x2_train);
-
 fprintf('Mean     = %f\n',mu)
 fprintf('Variance = %f\n',sigma2)
 
-%% Probability of validation and test examples for the fitted parameters
+%% Calc probability for the fitted parameters
 
+% validation set
 p_valid=gaussian(x2_valid,mu,sigma2);
-p_test =gaussian(x2_test ,mu,sigma2); % to be used later
+% test set (to be used later)
+p_test =gaussian(x2_test ,mu,sigma2);
 
 %% Select threshold
 
@@ -122,15 +132,21 @@ fprintf('Best F1 from validation set: %f\n', F1);
 %% Plot flagged good and anomalous data
 
 % shuffle data
-shuffled_idxs=randperm(length(x2_valid));
-x2_valid_rand=x2_valid(shuffled_idxs);
-p_valid_rand=p_valid(shuffled_idxs);
+%shuffled_idxs=randperm(length(x2_valid));
+x2_valid_rand=x2_valid;%(shuffled_idxs);
+p_valid_rand=p_valid;%(shuffled_idxs);
 
 % plot data
-figure
+fig_val = figure('visible','off');
 plot(x2_valid_rand(p_valid_rand<epsilon),'r.'); hold on
 plot(x2_valid_rand(p_valid_rand>=epsilon),'b.');
+
+xlabel('Number of iterations')
+ylabel('Heat transport')
+legend('Anomalous','Not anomalous')
 title('Validation set')
+
+saveas(fig_val,'fig_val','epsc')
 
 %% F1-score from test set
 
@@ -145,7 +161,13 @@ x2_test_rand=x2_test(shuffled_idxs);
 p_test_rand=p_test(shuffled_idxs);
 
 % plot data
-figure
+fig_test = figure('visible','off');
 plot(x2_test_rand(p_test_rand<epsilon),'r.'); hold on
 plot(x2_test_rand(p_test_rand>=epsilon),'b.');
+
+xlabel('Number of iterations')
+ylabel('Heat transport')
+legend('Anomalous','Not anomalous')
 title('Test set')
+
+saveas(fig_test,'fig_test','epsc')

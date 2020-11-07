@@ -1,0 +1,4683 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: (MATLAB, The Mathworks, Inc. Version 9.5.0.1033004 \(R2018b\) Update 2. Operating System: Mac OS X)
+%%Title: ./fig_histogram.eps
+%%CreationDate: 2020-11-07T18:11:59
+%%Pages: (atend)
+%%BoundingBox:    28    10   464   359
+%%LanguageLevel: 3
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset (Apache XML Graphics Std ProcSet) 1.2 0
+%%Version: 1.2 0
+%%Copyright: (Copyright 2001-2003,2010 The Apache Software Foundation. License terms: http://www.apache.org/licenses/LICENSE-2.0)
+/bd{bind def}bind def
+/ld{load def}bd
+/GR/grestore ld
+/GS/gsave ld
+/RM/rmoveto ld
+/C/curveto ld
+/t/show ld
+/L/lineto ld
+/ML/setmiterlimit ld
+/CT/concat ld
+/f/fill ld
+/N/newpath ld
+/S/stroke ld
+/CC/setcmykcolor ld
+/A/ashow ld
+/cp/closepath ld
+/RC/setrgbcolor ld
+/LJ/setlinejoin ld
+/GC/setgray ld
+/LW/setlinewidth ld
+/M/moveto ld
+/re {4 2 roll M
+1 index 0 rlineto
+0 exch rlineto
+neg 0 rlineto
+cp } bd
+/_ctm matrix def
+/_tm matrix def
+/BT { _ctm currentmatrix pop matrix _tm copy pop 0 0 moveto } bd
+/ET { _ctm setmatrix } bd
+/iTm { _ctm setmatrix _tm concat } bd
+/Tm { _tm astore pop iTm 0 0 moveto } bd
+/ux 0.0 def
+/uy 0.0 def
+/F {
+  /Tp exch def
+  /Tf exch def
+  Tf findfont Tp scalefont setfont
+  /cf Tf def  /cs Tp def
+} bd
+/ULS {currentpoint /uy exch def /ux exch def} bd
+/ULE {
+  /Tcx currentpoint pop def
+  gsave
+  newpath
+  cf findfont cs scalefont dup
+  /FontMatrix get 0 get /Ts exch def /FontInfo get dup
+  /UnderlinePosition get Ts mul /To exch def
+  /UnderlineThickness get Ts mul /Tt exch def
+  ux uy To add moveto  Tcx uy To add lineto
+  Tt setlinewidth stroke
+  grestore
+} bd
+/OLE {
+  /Tcx currentpoint pop def
+  gsave
+  newpath
+  cf findfont cs scalefont dup
+  /FontMatrix get 0 get /Ts exch def /FontInfo get dup
+  /UnderlinePosition get Ts mul /To exch def
+  /UnderlineThickness get Ts mul /Tt exch def
+  ux uy To add cs add moveto Tcx uy To add cs add lineto
+  Tt setlinewidth stroke
+  grestore
+} bd
+/SOE {
+  /Tcx currentpoint pop def
+  gsave
+  newpath
+  cf findfont cs scalefont dup
+  /FontMatrix get 0 get /Ts exch def /FontInfo get dup
+  /UnderlinePosition get Ts mul /To exch def
+  /UnderlineThickness get Ts mul /Tt exch def
+  ux uy To add cs 10 mul 26 idiv add moveto Tcx uy To add cs 10 mul 26 idiv add lineto
+  Tt setlinewidth stroke
+  grestore
+} bd
+/QT {
+/Y22 exch store
+/X22 exch store
+/Y21 exch store
+/X21 exch store
+currentpoint
+/Y21 load 2 mul add 3 div exch
+/X21 load 2 mul add 3 div exch
+/X21 load 2 mul /X22 load add 3 div
+/Y21 load 2 mul /Y22 load add 3 div
+/X22 load /Y22 load curveto
+} bd
+/SSPD {
+dup length /d exch dict def
+{
+/v exch def
+/k exch def
+currentpagedevice k known {
+/cpdv currentpagedevice k get def
+v cpdv ne {
+/upd false def
+/nullv v type /nulltype eq def
+/nullcpdv cpdv type /nulltype eq def
+nullv nullcpdv or
+{
+/upd true def
+} {
+/sametype v type cpdv type eq def
+sametype {
+v type /arraytype eq {
+/vlen v length def
+/cpdvlen cpdv length def
+vlen cpdvlen eq {
+0 1 vlen 1 sub {
+/i exch def
+/obj v i get def
+/cpdobj cpdv i get def
+obj cpdobj ne {
+/upd true def
+exit
+} if
+} for
+} {
+/upd true def
+} ifelse
+} {
+v type /dicttype eq {
+v {
+/dv exch def
+/dk exch def
+/cpddv cpdv dk get def
+dv cpddv ne {
+/upd true def
+exit
+} if
+} forall
+} {
+/upd true def
+} ifelse
+} ifelse
+} if
+} ifelse
+upd true eq {
+d k v put
+} if
+} if
+} if
+} forall
+d length 0 gt {
+d setpagedevice
+} if
+} bd
+/RE { % /NewFontName [NewEncodingArray] /FontName RE -
+  findfont dup length dict begin
+  {
+    1 index /FID ne
+    {def} {pop pop} ifelse
+  } forall
+  /Encoding exch def
+  /FontName 1 index def
+  currentdict definefont pop
+  end
+} bind def
+%%EndResource
+%%BeginResource: procset (Apache XML Graphics EPS ProcSet) 1.0 0
+%%Version: 1.0 0
+%%Copyright: (Copyright 2002-2003 The Apache Software Foundation. License terms: http://www.apache.org/licenses/LICENSE-2.0)
+/BeginEPSF { %def
+/b4_Inc_state save def         % Save state for cleanup
+/dict_count countdictstack def % Count objects on dict stack
+/op_count count 1 sub def      % Count objects on operand stack
+userdict begin                 % Push userdict on dict stack
+/showpage { } def              % Redefine showpage, { } = null proc
+0 setgray 0 setlinecap         % Prepare graphics state
+1 setlinewidth 0 setlinejoin
+10 setmiterlimit [ ] 0 setdash newpath
+/languagelevel where           % If level not equal to 1 then
+{pop languagelevel             % set strokeadjust and
+1 ne                           % overprint to their defaults.
+{false setstrokeadjust false setoverprint
+} if
+} if
+} bd
+/EndEPSF { %def
+count op_count sub {pop} repeat            % Clean up stacks
+countdictstack dict_count sub {end} repeat
+b4_Inc_state restore
+} bd
+%%EndResource
+%FOPBeginFontDict
+%%IncludeResource: font Courier-Oblique
+%%IncludeResource: font Courier-BoldOblique
+%%IncludeResource: font Courier-Bold
+%%IncludeResource: font ZapfDingbats
+%%IncludeResource: font Symbol
+%%IncludeResource: font Helvetica
+%%IncludeResource: font Helvetica-Oblique
+%%IncludeResource: font Helvetica-Bold
+%%IncludeResource: font Helvetica-BoldOblique
+%%IncludeResource: font Times-Roman
+%%IncludeResource: font Times-Italic
+%%IncludeResource: font Times-Bold
+%%IncludeResource: font Times-BoldItalic
+%%IncludeResource: font Courier
+%FOPEndFontDict
+%%BeginResource: encoding WinAnsiEncoding
+/WinAnsiEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma
+/hyphen /period /slash /zero /one
+/two /three /four /five /six
+/seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at
+/A /B /C /D /E
+/F /G /H /I /J
+/K /L /M /N /O
+/P /Q /R /S /T
+/U /V /W /X /Y
+/Z /bracketleft /backslash /bracketright /asciicircum
+/underscore /quoteleft /a /b /c
+/d /e /f /g /h
+/i /j /k /l /m
+/n /o /p /q /r
+/s /t /u /v /w
+/x /y /z /braceleft /bar
+/braceright /asciitilde /bullet /Euro /bullet
+/quotesinglbase /florin /quotedblbase /ellipsis /dagger
+/daggerdbl /circumflex /perthousand /Scaron /guilsinglleft
+/OE /bullet /Zcaron /bullet /bullet
+/quoteleft /quoteright /quotedblleft /quotedblright /bullet
+/endash /emdash /asciitilde /trademark /scaron
+/guilsinglright /oe /bullet /zcaron /Ydieresis
+/space /exclamdown /cent /sterling /currency
+/yen /brokenbar /section /dieresis /copyright
+/ordfeminine /guillemotleft /logicalnot /sfthyphen /registered
+/macron /degree /plusminus /twosuperior /threesuperior
+/acute /mu /paragraph /middot /cedilla
+/onesuperior /ordmasculine /guillemotright /onequarter /onehalf
+/threequarters /questiondown /Agrave /Aacute /Acircumflex
+/Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave
+/Iacute /Icircumflex /Idieresis /Eth /Ntilde
+/Ograve /Oacute /Ocircumflex /Otilde /Odieresis
+/multiply /Oslash /Ugrave /Uacute /Ucircumflex
+/Udieresis /Yacute /Thorn /germandbls /agrave
+/aacute /acircumflex /atilde /adieresis /aring
+/ae /ccedilla /egrave /eacute /ecircumflex
+/edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex
+/otilde /odieresis /divide /oslash /ugrave
+/uacute /ucircumflex /udieresis /yacute /thorn
+/ydieresis
+] def
+%%EndResource
+%FOPBeginFontReencode
+/Courier-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier-Oblique exch definefont pop
+/Courier-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier-BoldOblique exch definefont pop
+/Courier-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier-Bold exch definefont pop
+/Helvetica findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica exch definefont pop
+/Helvetica-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica-Oblique exch definefont pop
+/Helvetica-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica-Bold exch definefont pop
+/Helvetica-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica-BoldOblique exch definefont pop
+/Times-Roman findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-Roman exch definefont pop
+/Times-Italic findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-Italic exch definefont pop
+/Times-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-Bold exch definefont pop
+/Times-BoldItalic findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-BoldItalic exch definefont pop
+/Courier findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier exch definefont pop
+%FOPEndFontReencode
+%%EndProlog
+%%Page: 1 1
+%%PageBoundingBox: 0 0 512 384
+%%BeginPageSetup
+[1 0 0 -1 0 384] CT
+%%EndPageSetup
+GS
+1 GC
+N
+0 0 512 384 re
+f
+GR
+GS
+1 GC
+N
+0 0 512 384 re
+f
+GR
+GS
+1 GC
+N
+67 342 M
+463 342 L
+463 29 L
+67 29 L
+cp
+f
+GR
+GS
+0.4 0.668 0.845 RC
+N
+86.44 342 M
+86.44 245.569 L
+85 245.569 L
+85 342 L
+cp
+87.88 342 M
+87.88 336.996 L
+86.44 336.996 L
+86.44 342 L
+cp
+89.32 342 M
+89.32 340.436 L
+87.88 340.436 L
+87.88 342 L
+cp
+90.76 342 M
+90.76 341.166 L
+89.32 341.166 L
+89.32 342 L
+cp
+92.2 342 M
+92.2 341.375 L
+90.76 341.375 L
+90.76 342 L
+cp
+93.64 342 M
+93.64 341.687 L
+92.2 341.687 L
+92.2 342 L
+cp
+95.08 342 M
+95.08 341.583 L
+93.64 341.583 L
+93.64 342 L
+cp
+96.52 341.792 M
+95.08 341.792 L
+95.08 342 L
+96.52 342 L
+97.96 342 L
+99.4 342 L
+100.84 342 L
+100.84 341.792 L
+99.4 341.792 L
+97.96 341.792 L
+cp
+102.28 341.896 M
+100.84 341.896 L
+100.84 342 L
+102.28 342 L
+103.72 342 L
+105.16 342 L
+105.16 341.896 L
+103.72 341.896 L
+cp
+106.6 342 M
+106.6 341.792 L
+105.16 341.792 L
+105.16 342 L
+cp
+108.04 342 M
+108.04 341.896 L
+106.6 341.896 L
+106.6 342 L
+cp
+110.92 341.896 M
+109.48 341.896 L
+109.48 342 L
+110.92 342 L
+112.36 342 L
+113.8 342 L
+113.8 341.896 L
+112.36 341.896 L
+cp
+116.68 341.896 M
+115.24 341.896 L
+115.24 342 L
+116.68 342 L
+118.12 342 L
+118.12 341.896 L
+cp
+121 342 M
+121 341.896 L
+119.56 341.896 L
+119.56 342 L
+cp
+123.88 342 M
+123.88 341.896 L
+122.44 341.896 L
+122.44 342 L
+cp
+126.76 342 M
+126.76 341.896 L
+125.32 341.896 L
+125.32 342 L
+cp
+129.64 342 M
+129.64 341.896 L
+128.2 341.896 L
+128.2 342 L
+cp
+133.96 342 M
+133.96 341.896 L
+132.52 341.896 L
+132.52 342 L
+cp
+136.84 342 M
+136.84 341.896 L
+135.4 341.896 L
+135.4 342 L
+cp
+141.16 342 M
+141.16 341.896 L
+139.72 341.896 L
+139.72 342 L
+cp
+145.48 342 M
+145.48 341.896 L
+144.04 341.896 L
+144.04 342 L
+cp
+151.24 342 M
+151.24 341.896 L
+149.8 341.896 L
+149.8 342 L
+cp
+155.56 342 M
+155.56 341.896 L
+154.12 341.896 L
+154.12 342 L
+cp
+161.32 342 M
+161.32 341.896 L
+159.88 341.896 L
+159.88 342 L
+cp
+165.64 342 M
+165.64 341.896 L
+164.2 341.896 L
+164.2 342 L
+cp
+171.4 342 M
+171.4 341.896 L
+169.96 341.896 L
+169.96 342 L
+cp
+175.72 342 M
+175.72 325.945 L
+174.28 325.945 L
+174.28 342 L
+cp
+177.16 342 M
+177.16 301.238 L
+175.72 301.238 L
+175.72 342 L
+cp
+178.6 342 M
+178.6 261.936 L
+177.16 261.936 L
+177.16 342 L
+cp
+180.04 342 M
+180.04 254.013 L
+178.6 254.013 L
+178.6 342 L
+cp
+181.48 342 M
+181.48 238.793 L
+180.04 238.793 L
+180.04 342 L
+cp
+182.92 342 M
+182.92 210.437 L
+181.48 210.437 L
+181.48 342 L
+cp
+184.36 342 M
+184.36 183.853 L
+182.92 183.853 L
+182.92 342 L
+cp
+185.8 342 M
+185.8 179.891 L
+184.36 179.891 L
+184.36 342 L
+cp
+187.24 342 M
+187.24 140.902 L
+185.8 140.902 L
+185.8 342 L
+cp
+188.68 342 M
+188.68 116.09 L
+187.24 116.09 L
+187.24 342 L
+cp
+190.12 342 M
+190.12 75.12 L
+188.68 75.12 L
+188.68 342 L
+cp
+191.56 342 M
+191.56 66.572 L
+190.12 66.572 L
+190.12 342 L
+cp
+193 342 M
+193 111.92 L
+191.56 111.92 L
+191.56 342 L
+cp
+194.44 342 M
+194.44 116.299 L
+193 116.299 L
+193 342 L
+cp
+195.88 342 M
+195.88 132.666 L
+194.44 132.666 L
+194.44 342 L
+cp
+197.32 342 M
+197.32 88.464 L
+195.88 88.464 L
+195.88 342 L
+cp
+198.76 342 M
+198.76 106.708 L
+197.32 106.708 L
+197.32 342 L
+cp
+200.2 342 M
+200.2 102.851 L
+198.76 102.851 L
+198.76 342 L
+cp
+201.64 342 M
+201.64 132.979 L
+200.2 132.979 L
+200.2 342 L
+cp
+203.08 342 M
+203.08 120.26 L
+201.64 120.26 L
+201.64 342 L
+cp
+204.52 342 M
+204.52 175.304 L
+203.08 175.304 L
+203.08 342 L
+cp
+205.96 342 M
+205.96 188.753 L
+204.52 188.753 L
+204.52 342 L
+cp
+207.4 342 M
+207.4 195.425 L
+205.96 195.425 L
+205.96 342 L
+cp
+208.84 342 M
+208.84 210.749 L
+207.4 210.749 L
+207.4 342 L
+cp
+210.28 342 M
+210.28 231.495 L
+208.84 231.495 L
+208.84 342 L
+cp
+211.72 342 M
+211.72 226.804 L
+210.28 226.804 L
+210.28 342 L
+cp
+213.16 342 M
+213.16 249.426 L
+211.72 249.426 L
+211.72 342 L
+cp
+214.6 342 M
+214.6 247.445 L
+213.16 247.445 L
+213.16 342 L
+cp
+216.04 342 M
+216.04 284.35 L
+214.6 284.35 L
+214.6 342 L
+cp
+217.48 342 M
+217.48 284.454 L
+216.04 284.454 L
+216.04 342 L
+cp
+218.92 342 M
+218.92 302.802 L
+217.48 302.802 L
+217.48 342 L
+cp
+220.36 342 M
+220.36 304.887 L
+218.92 304.887 L
+218.92 342 L
+cp
+221.8 342 M
+221.8 315.104 L
+220.36 315.104 L
+220.36 342 L
+cp
+223.24 342 M
+223.24 310.934 L
+221.8 310.934 L
+221.8 342 L
+cp
+224.68 342 M
+224.68 318.961 L
+223.24 318.961 L
+223.24 342 L
+cp
+226.12 342 M
+226.12 329.699 L
+224.68 329.699 L
+224.68 342 L
+cp
+227.56 342 M
+227.56 329.281 L
+226.12 329.281 L
+226.12 342 L
+cp
+229 342 M
+229 328.448 L
+227.56 328.448 L
+227.56 342 L
+cp
+230.44 342 M
+230.44 324.799 L
+229 324.799 L
+229 342 L
+cp
+231.88 342 M
+231.88 326.675 L
+230.44 326.675 L
+230.44 342 L
+cp
+233.32 342 M
+233.32 330.116 L
+231.88 330.116 L
+231.88 342 L
+cp
+234.76 342 M
+234.76 332.201 L
+233.32 332.201 L
+233.32 342 L
+cp
+236.2 342 M
+236.2 331.262 L
+234.76 331.262 L
+234.76 342 L
+cp
+237.64 333.764 M
+236.2 333.764 L
+236.2 342 L
+237.64 342 L
+239.08 342 L
+239.08 333.764 L
+cp
+240.52 342 M
+240.52 340.332 L
+239.08 340.332 L
+239.08 342 L
+cp
+241.96 342 M
+241.96 340.957 L
+240.52 340.957 L
+240.52 342 L
+cp
+243.4 342 M
+243.4 340.645 L
+241.96 340.645 L
+241.96 342 L
+cp
+244.84 342 M
+244.84 340.332 L
+243.4 340.332 L
+243.4 342 L
+cp
+246.28 342 M
+246.28 340.54 L
+244.84 340.54 L
+244.84 342 L
+cp
+247.72 342 M
+247.72 340.436 L
+246.28 340.436 L
+246.28 342 L
+cp
+249.16 340.645 M
+247.72 340.645 L
+247.72 342 L
+249.16 342 L
+250.6 342 L
+250.6 340.645 L
+cp
+252.04 340.749 M
+250.6 340.749 L
+250.6 342 L
+252.04 342 L
+253.48 342 L
+253.48 340.749 L
+cp
+254.92 342 M
+254.92 340.228 L
+253.48 340.228 L
+253.48 342 L
+cp
+256.36 342 M
+256.36 338.977 L
+254.92 338.977 L
+254.92 342 L
+cp
+257.8 342 M
+257.8 340.645 L
+256.36 340.645 L
+256.36 342 L
+cp
+259.24 341.27 M
+257.8 341.27 L
+257.8 342 L
+259.24 342 L
+260.68 342 L
+260.68 341.27 L
+cp
+262.12 342 M
+262.12 339.394 L
+260.68 339.394 L
+260.68 342 L
+cp
+263.56 342 M
+263.56 335.328 L
+262.12 335.328 L
+262.12 342 L
+cp
+265 342 M
+265 336.579 L
+263.56 336.579 L
+263.56 342 L
+cp
+266.44 342 M
+266.44 338.456 L
+265 338.456 L
+265 342 L
+cp
+267.88 342 M
+267.88 339.498 L
+266.44 339.498 L
+266.44 342 L
+cp
+269.32 342 M
+269.32 338.351 L
+267.88 338.351 L
+267.88 342 L
+cp
+270.76 342 M
+270.76 337.413 L
+269.32 337.413 L
+269.32 342 L
+cp
+272.2 342 M
+272.2 336.371 L
+270.76 336.371 L
+270.76 342 L
+cp
+273.64 342 M
+273.64 332.722 L
+272.2 332.722 L
+272.2 342 L
+cp
+275.08 342 M
+275.08 338.768 L
+273.64 338.768 L
+273.64 342 L
+cp
+276.52 342 M
+276.52 337.204 L
+275.08 337.204 L
+275.08 342 L
+cp
+277.96 342 M
+277.96 339.915 L
+276.52 339.915 L
+276.52 342 L
+cp
+279.4 342 M
+279.4 340.332 L
+277.96 340.332 L
+277.96 342 L
+cp
+280.84 342 M
+280.84 340.749 L
+279.4 340.749 L
+279.4 342 L
+cp
+282.28 342 M
+282.28 340.957 L
+280.84 340.957 L
+280.84 342 L
+cp
+283.72 342 M
+283.72 341.166 L
+282.28 341.166 L
+282.28 342 L
+cp
+285.16 342 M
+285.16 341.375 L
+283.72 341.375 L
+283.72 342 L
+cp
+286.6 342 M
+286.6 341.27 L
+285.16 341.27 L
+285.16 342 L
+cp
+288.04 342 M
+288.04 338.456 L
+286.6 338.456 L
+286.6 342 L
+cp
+289.48 342 M
+289.48 339.185 L
+288.04 339.185 L
+288.04 342 L
+cp
+290.92 342 M
+290.92 340.645 L
+289.48 340.645 L
+289.48 342 L
+cp
+292.36 342 M
+292.36 339.602 L
+290.92 339.602 L
+290.92 342 L
+cp
+293.8 342 M
+293.8 339.707 L
+292.36 339.707 L
+292.36 342 L
+cp
+295.24 342 M
+295.24 341.27 L
+293.8 341.27 L
+293.8 342 L
+cp
+296.68 342 M
+296.68 341.375 L
+295.24 341.375 L
+295.24 342 L
+cp
+298.12 342 M
+298.12 341.27 L
+296.68 341.27 L
+296.68 342 L
+cp
+299.56 341.479 M
+298.12 341.479 L
+298.12 342 L
+299.56 342 L
+301 342 L
+301 341.479 L
+cp
+302.44 342 M
+302.44 341.27 L
+301 341.27 L
+301 342 L
+cp
+303.88 342 M
+303.88 341.375 L
+302.44 341.375 L
+302.44 342 L
+cp
+305.32 342 M
+305.32 341.479 L
+303.88 341.479 L
+303.88 342 L
+cp
+306.76 342 M
+306.76 341.687 L
+305.32 341.687 L
+305.32 342 L
+cp
+308.2 342 M
+308.2 341.583 L
+306.76 341.583 L
+306.76 342 L
+cp
+309.64 342 M
+309.64 340.54 L
+308.2 340.54 L
+308.2 342 L
+cp
+311.08 342 M
+311.08 340.436 L
+309.64 340.436 L
+309.64 342 L
+cp
+312.52 342 M
+312.52 339.915 L
+311.08 339.915 L
+311.08 342 L
+cp
+313.96 342 M
+313.96 341.27 L
+312.52 341.27 L
+312.52 342 L
+cp
+315.4 341.583 M
+313.96 341.583 L
+313.96 342 L
+315.4 342 L
+316.84 342 L
+316.84 341.583 L
+cp
+318.28 342 M
+318.28 341.27 L
+316.84 341.27 L
+316.84 342 L
+cp
+319.72 342 M
+319.72 340.957 L
+318.28 340.957 L
+318.28 342 L
+cp
+321.16 342 M
+321.16 341.479 L
+319.72 341.479 L
+319.72 342 L
+cp
+322.6 342 M
+322.6 341.583 L
+321.16 341.583 L
+321.16 342 L
+cp
+324.04 341.687 M
+322.6 341.687 L
+322.6 342 L
+324.04 342 L
+325.48 342 L
+326.92 342 L
+326.92 341.687 L
+325.48 341.687 L
+cp
+328.36 342 M
+328.36 341.792 L
+326.92 341.792 L
+326.92 342 L
+cp
+329.8 342 M
+329.8 341.687 L
+328.36 341.687 L
+328.36 342 L
+cp
+331.24 342 M
+331.24 341.583 L
+329.8 341.583 L
+329.8 342 L
+cp
+332.68 342 M
+332.68 341.479 L
+331.24 341.479 L
+331.24 342 L
+cp
+334.12 342 M
+334.12 341.583 L
+332.68 341.583 L
+332.68 342 L
+cp
+335.56 342 M
+335.56 341.792 L
+334.12 341.792 L
+334.12 342 L
+cp
+337 342 M
+337 341.583 L
+335.56 341.583 L
+335.56 342 L
+cp
+338.44 342 M
+338.44 341.687 L
+337 341.687 L
+337 342 L
+cp
+339.88 342 M
+339.88 341.792 L
+338.44 341.792 L
+338.44 342 L
+cp
+341.32 341.583 M
+339.88 341.583 L
+339.88 342 L
+341.32 342 L
+342.76 342 L
+342.76 341.583 L
+cp
+344.2 342 M
+344.2 341.062 L
+342.76 341.062 L
+342.76 342 L
+cp
+345.64 342 M
+345.64 341.687 L
+344.2 341.687 L
+344.2 342 L
+cp
+347.08 342 M
+347.08 341.479 L
+345.64 341.479 L
+345.64 342 L
+cp
+348.52 342 M
+348.52 341.687 L
+347.08 341.687 L
+347.08 342 L
+cp
+349.96 341.792 M
+348.52 341.792 L
+348.52 342 L
+349.96 342 L
+351.4 342 L
+352.84 342 L
+354.28 342 L
+354.28 341.792 L
+352.84 341.792 L
+351.4 341.792 L
+cp
+355.72 341.896 M
+354.28 341.896 L
+354.28 342 L
+355.72 342 L
+357.16 342 L
+357.16 341.896 L
+cp
+358.6 342 M
+358.6 341.792 L
+357.16 341.792 L
+357.16 342 L
+cp
+360.04 342 M
+360.04 341.896 L
+358.6 341.896 L
+358.6 342 L
+cp
+361.48 342 M
+361.48 341.792 L
+360.04 341.792 L
+360.04 342 L
+cp
+362.92 342 M
+362.92 341.687 L
+361.48 341.687 L
+361.48 342 L
+cp
+364.36 342 M
+364.36 341.896 L
+362.92 341.896 L
+362.92 342 L
+cp
+365.8 342 M
+365.8 341.583 L
+364.36 341.583 L
+364.36 342 L
+cp
+367.24 341.792 M
+365.8 341.792 L
+365.8 342 L
+367.24 342 L
+368.68 342 L
+370.12 342 L
+371.56 342 L
+373 342 L
+373 341.792 L
+371.56 341.792 L
+370.12 341.792 L
+368.68 341.792 L
+cp
+374.44 342 M
+374.44 341.896 L
+373 341.896 L
+373 342 L
+cp
+375.88 341.792 M
+374.44 341.792 L
+374.44 342 L
+375.88 342 L
+377.32 342 L
+377.32 341.792 L
+cp
+378.76 342 M
+378.76 341.687 L
+377.32 341.687 L
+377.32 342 L
+cp
+380.2 342 M
+380.2 341.896 L
+378.76 341.896 L
+378.76 342 L
+cp
+381.64 341.792 M
+380.2 341.792 L
+380.2 342 L
+381.64 342 L
+383.08 342 L
+383.08 341.792 L
+cp
+385.96 342 M
+385.96 341.792 L
+384.52 341.792 L
+384.52 342 L
+cp
+387.4 341.896 M
+385.96 341.896 L
+385.96 342 L
+387.4 342 L
+388.84 342 L
+390.28 342 L
+390.28 341.896 L
+388.84 341.896 L
+cp
+391.72 342 M
+391.72 341.792 L
+390.28 341.792 L
+390.28 342 L
+cp
+393.16 341.896 M
+391.72 341.896 L
+391.72 342 L
+393.16 342 L
+394.6 342 L
+394.6 341.896 L
+cp
+396.04 342 M
+396.04 341.792 L
+394.6 341.792 L
+394.6 342 L
+cp
+397.48 342 M
+397.48 341.896 L
+396.04 341.896 L
+396.04 342 L
+cp
+398.92 342 M
+398.92 341.792 L
+397.48 341.792 L
+397.48 342 L
+cp
+401.8 341.792 M
+400.36 341.792 L
+400.36 342 L
+401.8 342 L
+403.24 342 L
+403.24 341.792 L
+cp
+404.68 342 M
+404.68 341.896 L
+403.24 341.896 L
+403.24 342 L
+cp
+406.12 342 M
+406.12 341.792 L
+404.68 341.792 L
+404.68 342 L
+cp
+407.56 342 M
+407.56 341.896 L
+406.12 341.896 L
+406.12 342 L
+cp
+409 342 M
+409 341.687 L
+407.56 341.687 L
+407.56 342 L
+cp
+410.44 341.792 M
+409 341.792 L
+409 342 L
+410.44 342 L
+411.88 342 L
+413.32 342 L
+413.32 341.792 L
+411.88 341.792 L
+cp
+414.76 342 M
+414.76 341.896 L
+413.32 341.896 L
+413.32 342 L
+cp
+416.2 341.792 M
+414.76 341.792 L
+414.76 342 L
+416.2 342 L
+417.64 342 L
+417.64 341.792 L
+cp
+419.08 342 M
+419.08 341.896 L
+417.64 341.896 L
+417.64 342 L
+cp
+420.52 342 M
+420.52 341.792 L
+419.08 341.792 L
+419.08 342 L
+cp
+421.96 342 M
+421.96 341.896 L
+420.52 341.896 L
+420.52 342 L
+cp
+423.4 342 M
+423.4 341.792 L
+421.96 341.792 L
+421.96 342 L
+cp
+424.84 341.375 M
+423.4 341.375 L
+423.4 342 L
+424.84 342 L
+426.28 342 L
+426.28 341.375 L
+cp
+427.72 342 M
+427.72 341.479 L
+426.28 341.479 L
+426.28 342 L
+cp
+429.16 342 M
+429.16 341.375 L
+427.72 341.375 L
+427.72 342 L
+cp
+430.6 341.687 M
+429.16 341.687 L
+429.16 342 L
+430.6 342 L
+432.04 342 L
+433.48 342 L
+434.92 342 L
+436.36 342 L
+436.36 341.687 L
+434.92 341.687 L
+433.48 341.687 L
+432.04 341.687 L
+cp
+437.8 342 M
+437.8 341.896 L
+436.36 341.896 L
+436.36 342 L
+cp
+439.24 342 M
+439.24 341.792 L
+437.8 341.792 L
+437.8 342 L
+cp
+440.68 342 M
+440.68 341.687 L
+439.24 341.687 L
+439.24 342 L
+cp
+442.12 342 M
+442.12 341.166 L
+440.68 341.166 L
+440.68 342 L
+cp
+443.56 342 M
+443.56 341.479 L
+442.12 341.479 L
+442.12 342 L
+cp
+445 342 M
+445 341.27 L
+443.56 341.27 L
+443.56 342 L
+cp
+f
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+85 342 M
+85 245.569 L
+86.44 245.569 L
+86.44 342 L
+86.44 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+86.44 336.996 M
+87.88 336.996 L
+87.88 342 L
+87.88 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+87.88 340.436 M
+89.32 340.436 L
+89.32 342 L
+89.32 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+89.32 341.166 M
+90.76 341.166 L
+90.76 342 L
+90.76 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+90.76 341.375 M
+92.2 341.375 L
+92.2 342 L
+92.2 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+92.2 341.687 M
+93.64 341.687 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+93.64 342 M
+93.64 342 L
+93.64 341.583 L
+95.08 341.583 L
+95.08 342 L
+95.08 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+95.08 341.792 M
+96.52 341.792 L
+96.52 342 L
+96.52 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+96.52 341.792 M
+97.96 341.792 L
+97.96 342 L
+97.96 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+97.96 341.792 M
+99.4 341.792 L
+99.4 342 L
+99.4 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+99.4 341.792 M
+100.84 341.792 L
+100.84 342 L
+100.84 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+100.84 341.896 M
+102.28 341.896 L
+102.28 342 L
+102.28 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+102.28 341.896 M
+103.72 341.896 L
+103.72 342 L
+103.72 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+103.72 341.896 M
+105.16 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+105.16 342 M
+105.16 342 L
+105.16 341.792 L
+106.6 341.792 L
+106.6 342 L
+106.6 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+106.6 341.896 M
+108.04 341.896 L
+108.04 342 L
+108.04 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+108.04 342 M
+109.48 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+109.48 342 M
+109.48 342 L
+109.48 341.896 L
+110.92 341.896 L
+110.92 342 L
+110.92 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+110.92 341.896 M
+112.36 341.896 L
+112.36 342 L
+112.36 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+112.36 341.896 M
+113.8 341.896 L
+113.8 342 L
+113.8 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+113.8 342 M
+115.24 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+115.24 342 M
+115.24 342 L
+115.24 341.896 L
+116.68 341.896 L
+116.68 342 L
+116.68 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+116.68 341.896 M
+118.12 341.896 L
+118.12 342 L
+118.12 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+118.12 342 M
+119.56 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+119.56 342 M
+119.56 342 L
+119.56 341.896 L
+121 341.896 L
+121 342 L
+121 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+121 342 M
+122.44 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+122.44 342 M
+122.44 342 L
+122.44 341.896 L
+123.88 341.896 L
+123.88 342 L
+123.88 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+123.88 342 M
+125.32 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+125.32 342 M
+125.32 342 L
+125.32 341.896 L
+126.76 341.896 L
+126.76 342 L
+126.76 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+126.76 342 M
+128.2 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+128.2 342 M
+128.2 342 L
+128.2 341.896 L
+129.64 341.896 L
+129.64 342 L
+129.64 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+129.64 342 M
+131.08 342 L
+131.08 342 L
+131.08 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+131.08 342 M
+132.52 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+132.52 342 M
+132.52 342 L
+132.52 341.896 L
+133.96 341.896 L
+133.96 342 L
+133.96 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+133.96 342 M
+135.4 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+135.4 342 M
+135.4 342 L
+135.4 341.896 L
+136.84 341.896 L
+136.84 342 L
+136.84 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+136.84 342 M
+138.28 342 L
+138.28 342 L
+138.28 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+138.28 342 M
+139.72 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+139.72 342 M
+139.72 342 L
+139.72 341.896 L
+141.16 341.896 L
+141.16 342 L
+141.16 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+141.16 342 M
+142.6 342 L
+142.6 342 L
+142.6 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+142.6 342 M
+144.04 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+144.04 342 M
+144.04 342 L
+144.04 341.896 L
+145.48 341.896 L
+145.48 342 L
+145.48 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+145.48 342 M
+146.92 342 L
+146.92 342 L
+146.92 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+146.92 342 M
+148.36 342 L
+148.36 342 L
+148.36 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+148.36 342 M
+149.8 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+149.8 342 M
+149.8 342 L
+149.8 341.896 L
+151.24 341.896 L
+151.24 342 L
+151.24 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+151.24 342 M
+152.68 342 L
+152.68 342 L
+152.68 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+152.68 342 M
+154.12 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+154.12 342 M
+154.12 342 L
+154.12 341.896 L
+155.56 341.896 L
+155.56 342 L
+155.56 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+155.56 342 M
+157 342 L
+157 342 L
+157 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+157 342 M
+158.44 342 L
+158.44 342 L
+158.44 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+158.44 342 M
+159.88 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+159.88 342 M
+159.88 342 L
+159.88 341.896 L
+161.32 341.896 L
+161.32 342 L
+161.32 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+161.32 342 M
+162.76 342 L
+162.76 342 L
+162.76 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+162.76 342 M
+164.2 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+164.2 342 M
+164.2 342 L
+164.2 341.896 L
+165.64 341.896 L
+165.64 342 L
+165.64 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+165.64 342 M
+167.08 342 L
+167.08 342 L
+167.08 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+167.08 342 M
+168.52 342 L
+168.52 342 L
+168.52 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+168.52 342 M
+169.96 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+169.96 342 M
+169.96 342 L
+169.96 341.896 L
+171.4 341.896 L
+171.4 342 L
+171.4 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+171.4 342 M
+172.84 342 L
+172.84 342 L
+172.84 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+172.84 342 M
+174.28 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+174.28 342 M
+174.28 342 L
+174.28 325.945 L
+175.72 325.945 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+175.72 342 M
+175.72 342 L
+175.72 301.238 L
+177.16 301.238 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+177.16 342 M
+177.16 342 L
+177.16 261.936 L
+178.6 261.936 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+178.6 342 M
+178.6 342 L
+178.6 254.013 L
+180.04 254.013 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+180.04 342 M
+180.04 342 L
+180.04 238.793 L
+181.48 238.793 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+181.48 342 M
+181.48 342 L
+181.48 210.437 L
+182.92 210.437 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+182.92 342 M
+182.92 342 L
+182.92 183.853 L
+184.36 183.853 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+184.36 342 M
+184.36 342 L
+184.36 179.891 L
+185.8 179.891 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+185.8 342 M
+185.8 342 L
+185.8 140.902 L
+187.24 140.902 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+187.24 342 M
+187.24 342 L
+187.24 116.09 L
+188.68 116.09 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+188.68 342 M
+188.68 342 L
+188.68 75.12 L
+190.12 75.12 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+190.12 342 M
+190.12 342 L
+190.12 66.572 L
+191.56 66.572 L
+191.56 342 L
+191.56 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+191.56 111.92 M
+193 111.92 L
+193 342 L
+193 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+193 116.299 M
+194.44 116.299 L
+194.44 342 L
+194.44 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+194.44 132.666 M
+195.88 132.666 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+195.88 342 M
+195.88 342 L
+195.88 88.464 L
+197.32 88.464 L
+197.32 342 L
+197.32 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+197.32 106.708 M
+198.76 106.708 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+198.76 342 M
+198.76 342 L
+198.76 102.851 L
+200.2 102.851 L
+200.2 342 L
+200.2 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+200.2 132.979 M
+201.64 132.979 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+201.64 342 M
+201.64 342 L
+201.64 120.26 L
+203.08 120.26 L
+203.08 342 L
+203.08 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+203.08 175.304 M
+204.52 175.304 L
+204.52 342 L
+204.52 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+204.52 188.753 M
+205.96 188.753 L
+205.96 342 L
+205.96 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+205.96 195.425 M
+207.4 195.425 L
+207.4 342 L
+207.4 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+207.4 210.749 M
+208.84 210.749 L
+208.84 342 L
+208.84 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+208.84 231.495 M
+210.28 231.495 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+210.28 342 M
+210.28 342 L
+210.28 226.804 L
+211.72 226.804 L
+211.72 342 L
+211.72 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+211.72 249.426 M
+213.16 249.426 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+213.16 342 M
+213.16 342 L
+213.16 247.445 L
+214.6 247.445 L
+214.6 342 L
+214.6 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+214.6 284.35 M
+216.04 284.35 L
+216.04 342 L
+216.04 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+216.04 284.454 M
+217.48 284.454 L
+217.48 342 L
+217.48 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+217.48 302.802 M
+218.92 302.802 L
+218.92 342 L
+218.92 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+218.92 304.887 M
+220.36 304.887 L
+220.36 342 L
+220.36 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+220.36 315.104 M
+221.8 315.104 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+221.8 342 M
+221.8 342 L
+221.8 310.934 L
+223.24 310.934 L
+223.24 342 L
+223.24 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+223.24 318.961 M
+224.68 318.961 L
+224.68 342 L
+224.68 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+224.68 329.699 M
+226.12 329.699 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+226.12 342 M
+226.12 342 L
+226.12 329.281 L
+227.56 329.281 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+227.56 342 M
+227.56 342 L
+227.56 328.448 L
+229 328.448 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+229 342 M
+229 342 L
+229 324.799 L
+230.44 324.799 L
+230.44 342 L
+230.44 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+230.44 326.675 M
+231.88 326.675 L
+231.88 342 L
+231.88 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+231.88 330.116 M
+233.32 330.116 L
+233.32 342 L
+233.32 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+233.32 332.201 M
+234.76 332.201 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+234.76 342 M
+234.76 342 L
+234.76 331.262 L
+236.2 331.262 L
+236.2 342 L
+236.2 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+236.2 333.764 M
+237.64 333.764 L
+237.64 342 L
+237.64 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+237.64 333.764 M
+239.08 333.764 L
+239.08 342 L
+239.08 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+239.08 340.332 M
+240.52 340.332 L
+240.52 342 L
+240.52 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+240.52 340.957 M
+241.96 340.957 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+241.96 342 M
+241.96 342 L
+241.96 340.645 L
+243.4 340.645 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+243.4 342 M
+243.4 342 L
+243.4 340.332 L
+244.84 340.332 L
+244.84 342 L
+244.84 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+244.84 340.54 M
+246.28 340.54 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+246.28 342 M
+246.28 342 L
+246.28 340.436 L
+247.72 340.436 L
+247.72 342 L
+247.72 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+247.72 340.645 M
+249.16 340.645 L
+249.16 342 L
+249.16 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+249.16 340.645 M
+250.6 340.645 L
+250.6 342 L
+250.6 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+250.6 340.749 M
+252.04 340.749 L
+252.04 342 L
+252.04 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+252.04 340.749 M
+253.48 340.749 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+253.48 342 M
+253.48 342 L
+253.48 340.228 L
+254.92 340.228 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+254.92 342 M
+254.92 342 L
+254.92 338.977 L
+256.36 338.977 L
+256.36 342 L
+256.36 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+256.36 340.645 M
+257.8 340.645 L
+257.8 342 L
+257.8 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+257.8 341.27 M
+259.24 341.27 L
+259.24 342 L
+259.24 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+259.24 341.27 M
+260.68 341.27 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+260.68 342 M
+260.68 342 L
+260.68 339.394 L
+262.12 339.394 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+262.12 342 M
+262.12 342 L
+262.12 335.328 L
+263.56 335.328 L
+263.56 342 L
+263.56 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+263.56 336.579 M
+265 336.579 L
+265 342 L
+265 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+265 338.456 M
+266.44 338.456 L
+266.44 342 L
+266.44 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+266.44 339.498 M
+267.88 339.498 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+267.88 342 M
+267.88 342 L
+267.88 338.351 L
+269.32 338.351 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+269.32 342 M
+269.32 342 L
+269.32 337.413 L
+270.76 337.413 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+270.76 342 M
+270.76 342 L
+270.76 336.371 L
+272.2 336.371 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+272.2 342 M
+272.2 342 L
+272.2 332.722 L
+273.64 332.722 L
+273.64 342 L
+273.64 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+273.64 338.768 M
+275.08 338.768 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+275.08 342 M
+275.08 342 L
+275.08 337.204 L
+276.52 337.204 L
+276.52 342 L
+276.52 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+276.52 339.915 M
+277.96 339.915 L
+277.96 342 L
+277.96 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+277.96 340.332 M
+279.4 340.332 L
+279.4 342 L
+279.4 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+279.4 340.749 M
+280.84 340.749 L
+280.84 342 L
+280.84 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+280.84 340.957 M
+282.28 340.957 L
+282.28 342 L
+282.28 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+282.28 341.166 M
+283.72 341.166 L
+283.72 342 L
+283.72 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+283.72 341.375 M
+285.16 341.375 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+285.16 342 M
+285.16 342 L
+285.16 341.27 L
+286.6 341.27 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+286.6 342 M
+286.6 342 L
+286.6 338.456 L
+288.04 338.456 L
+288.04 342 L
+288.04 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+288.04 339.185 M
+289.48 339.185 L
+289.48 342 L
+289.48 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+289.48 340.645 M
+290.92 340.645 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+290.92 342 M
+290.92 342 L
+290.92 339.602 L
+292.36 339.602 L
+292.36 342 L
+292.36 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+292.36 339.707 M
+293.8 339.707 L
+293.8 342 L
+293.8 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+293.8 341.27 M
+295.24 341.27 L
+295.24 342 L
+295.24 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+295.24 341.375 M
+296.68 341.375 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+296.68 342 M
+296.68 342 L
+296.68 341.27 L
+298.12 341.27 L
+298.12 342 L
+298.12 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+298.12 341.479 M
+299.56 341.479 L
+299.56 342 L
+299.56 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+299.56 341.479 M
+301 341.479 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+301 342 M
+301 342 L
+301 341.27 L
+302.44 341.27 L
+302.44 342 L
+302.44 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+302.44 341.375 M
+303.88 341.375 L
+303.88 342 L
+303.88 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+303.88 341.479 M
+305.32 341.479 L
+305.32 342 L
+305.32 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+305.32 341.687 M
+306.76 341.687 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+306.76 342 M
+306.76 342 L
+306.76 341.583 L
+308.2 341.583 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+308.2 342 M
+308.2 342 L
+308.2 340.54 L
+309.64 340.54 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+309.64 342 M
+309.64 342 L
+309.64 340.436 L
+311.08 340.436 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+311.08 342 M
+311.08 342 L
+311.08 339.915 L
+312.52 339.915 L
+312.52 342 L
+312.52 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+312.52 341.27 M
+313.96 341.27 L
+313.96 342 L
+313.96 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+313.96 341.583 M
+315.4 341.583 L
+315.4 342 L
+315.4 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+315.4 341.583 M
+316.84 341.583 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+316.84 342 M
+316.84 342 L
+316.84 341.27 L
+318.28 341.27 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+318.28 342 M
+318.28 342 L
+318.28 340.957 L
+319.72 340.957 L
+319.72 342 L
+319.72 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+319.72 341.479 M
+321.16 341.479 L
+321.16 342 L
+321.16 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+321.16 341.583 M
+322.6 341.583 L
+322.6 342 L
+322.6 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+322.6 341.687 M
+324.04 341.687 L
+324.04 342 L
+324.04 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+324.04 341.687 M
+325.48 341.687 L
+325.48 342 L
+325.48 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+325.48 341.687 M
+326.92 341.687 L
+326.92 342 L
+326.92 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+326.92 341.792 M
+328.36 341.792 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+328.36 342 M
+328.36 342 L
+328.36 341.687 L
+329.8 341.687 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+329.8 342 M
+329.8 342 L
+329.8 341.583 L
+331.24 341.583 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+331.24 342 M
+331.24 342 L
+331.24 341.479 L
+332.68 341.479 L
+332.68 342 L
+332.68 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+332.68 341.583 M
+334.12 341.583 L
+334.12 342 L
+334.12 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+334.12 341.792 M
+335.56 341.792 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+335.56 342 M
+335.56 342 L
+335.56 341.583 L
+337 341.583 L
+337 342 L
+337 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+337 341.687 M
+338.44 341.687 L
+338.44 342 L
+338.44 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+338.44 341.792 M
+339.88 341.792 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+339.88 342 M
+339.88 342 L
+339.88 341.583 L
+341.32 341.583 L
+341.32 342 L
+341.32 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+341.32 341.583 M
+342.76 341.583 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+342.76 342 M
+342.76 342 L
+342.76 341.062 L
+344.2 341.062 L
+344.2 342 L
+344.2 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+344.2 341.687 M
+345.64 341.687 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+345.64 342 M
+345.64 342 L
+345.64 341.479 L
+347.08 341.479 L
+347.08 342 L
+347.08 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+347.08 341.687 M
+348.52 341.687 L
+348.52 342 L
+348.52 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+348.52 341.792 M
+349.96 341.792 L
+349.96 342 L
+349.96 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+349.96 341.792 M
+351.4 341.792 L
+351.4 342 L
+351.4 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+351.4 341.792 M
+352.84 341.792 L
+352.84 342 L
+352.84 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+352.84 341.792 M
+354.28 341.792 L
+354.28 342 L
+354.28 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+354.28 341.896 M
+355.72 341.896 L
+355.72 342 L
+355.72 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+355.72 341.896 M
+357.16 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+357.16 342 M
+357.16 342 L
+357.16 341.792 L
+358.6 341.792 L
+358.6 342 L
+358.6 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+358.6 341.896 M
+360.04 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+360.04 342 M
+360.04 342 L
+360.04 341.792 L
+361.48 341.792 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+361.48 342 M
+361.48 342 L
+361.48 341.687 L
+362.92 341.687 L
+362.92 342 L
+362.92 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+362.92 341.896 M
+364.36 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+364.36 342 M
+364.36 342 L
+364.36 341.583 L
+365.8 341.583 L
+365.8 342 L
+365.8 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+365.8 341.792 M
+367.24 341.792 L
+367.24 342 L
+367.24 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+367.24 341.792 M
+368.68 341.792 L
+368.68 342 L
+368.68 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+368.68 341.792 M
+370.12 341.792 L
+370.12 342 L
+370.12 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+370.12 341.792 M
+371.56 341.792 L
+371.56 342 L
+371.56 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+371.56 341.792 M
+373 341.792 L
+373 342 L
+373 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+373 341.896 M
+374.44 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+374.44 342 M
+374.44 342 L
+374.44 341.792 L
+375.88 341.792 L
+375.88 342 L
+375.88 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+375.88 341.792 M
+377.32 341.792 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+377.32 342 M
+377.32 342 L
+377.32 341.687 L
+378.76 341.687 L
+378.76 342 L
+378.76 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+378.76 341.896 M
+380.2 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+380.2 342 M
+380.2 342 L
+380.2 341.792 L
+381.64 341.792 L
+381.64 342 L
+381.64 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+381.64 341.792 M
+383.08 341.792 L
+383.08 342 L
+383.08 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+383.08 342 M
+384.52 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+384.52 342 M
+384.52 342 L
+384.52 341.792 L
+385.96 341.792 L
+385.96 342 L
+385.96 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+385.96 341.896 M
+387.4 341.896 L
+387.4 342 L
+387.4 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+387.4 341.896 M
+388.84 341.896 L
+388.84 342 L
+388.84 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+388.84 341.896 M
+390.28 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+390.28 342 M
+390.28 342 L
+390.28 341.792 L
+391.72 341.792 L
+391.72 342 L
+391.72 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+391.72 341.896 M
+393.16 341.896 L
+393.16 342 L
+393.16 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+393.16 341.896 M
+394.6 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+394.6 342 M
+394.6 342 L
+394.6 341.792 L
+396.04 341.792 L
+396.04 342 L
+396.04 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+396.04 341.896 M
+397.48 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+397.48 342 M
+397.48 342 L
+397.48 341.792 L
+398.92 341.792 L
+398.92 342 L
+398.92 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+398.92 342 M
+400.36 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+400.36 342 M
+400.36 342 L
+400.36 341.792 L
+401.8 341.792 L
+401.8 342 L
+401.8 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+401.8 341.792 M
+403.24 341.792 L
+403.24 342 L
+403.24 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+403.24 341.896 M
+404.68 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+404.68 342 M
+404.68 342 L
+404.68 341.792 L
+406.12 341.792 L
+406.12 342 L
+406.12 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+406.12 341.896 M
+407.56 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+407.56 342 M
+407.56 342 L
+407.56 341.687 L
+409 341.687 L
+409 342 L
+409 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+409 341.792 M
+410.44 341.792 L
+410.44 342 L
+410.44 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+410.44 341.792 M
+411.88 341.792 L
+411.88 342 L
+411.88 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+411.88 341.792 M
+413.32 341.792 L
+413.32 342 L
+413.32 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+413.32 341.896 M
+414.76 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+414.76 342 M
+414.76 342 L
+414.76 341.792 L
+416.2 341.792 L
+416.2 342 L
+416.2 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+416.2 341.792 M
+417.64 341.792 L
+417.64 342 L
+417.64 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+417.64 341.896 M
+419.08 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+419.08 342 M
+419.08 342 L
+419.08 341.792 L
+420.52 341.792 L
+420.52 342 L
+420.52 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+420.52 341.896 M
+421.96 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+421.96 342 M
+421.96 342 L
+421.96 341.792 L
+423.4 341.792 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+423.4 342 M
+423.4 342 L
+423.4 341.375 L
+424.84 341.375 L
+424.84 342 L
+424.84 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+424.84 341.375 M
+426.28 341.375 L
+426.28 342 L
+426.28 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+426.28 341.479 M
+427.72 341.479 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+427.72 342 M
+427.72 342 L
+427.72 341.375 L
+429.16 341.375 L
+429.16 342 L
+429.16 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+429.16 341.687 M
+430.6 341.687 L
+430.6 342 L
+430.6 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+430.6 341.687 M
+432.04 341.687 L
+432.04 342 L
+432.04 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+432.04 341.687 M
+433.48 341.687 L
+433.48 342 L
+433.48 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+433.48 341.687 M
+434.92 341.687 L
+434.92 342 L
+434.92 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+434.92 341.687 M
+436.36 341.687 L
+436.36 342 L
+436.36 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+436.36 341.896 M
+437.8 341.896 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+437.8 342 M
+437.8 342 L
+437.8 341.792 L
+439.24 341.792 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+439.24 342 M
+439.24 342 L
+439.24 341.687 L
+440.68 341.687 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+440.68 342 M
+440.68 342 L
+440.68 341.166 L
+442.12 341.166 L
+442.12 342 L
+442.12 342 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+442.12 341.479 M
+443.56 341.479 L
+S
+GR
+GS
+2 setlinecap
+10.0 ML
+0.5 LW
+N
+443.56 342 M
+443.56 342 L
+443.56 341.27 L
+445 341.27 L
+445 342 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+67 342 M
+463 342 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+67 29 M
+463 29 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+83.716 342 M
+83.716 338.04 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+126.51 342 M
+126.51 338.04 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+169.303 342 M
+169.303 338.04 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+212.097 342 M
+212.097 338.04 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+254.89 342 M
+254.89 338.04 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+297.684 342 M
+297.684 338.04 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+340.477 342 M
+340.477 338.04 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+383.27 342 M
+383.27 338.04 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+426.064 342 M
+426.064 338.04 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+83.716 29 M
+83.716 32.96 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+126.51 29 M
+126.51 32.96 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+169.303 29 M
+169.303 32.96 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+212.097 29 M
+212.097 32.96 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+254.89 29 M
+254.89 32.96 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+297.684 29 M
+297.684 32.96 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+340.477 29 M
+340.477 32.96 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+383.27 29 M
+383.27 32.96 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+426.064 29 M
+426.064 32.96 L
+S
+GR
+GS
+[1 0 0 1 83.71619 346] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-3 10 moveto 
+1 -1 scale
+(0) t 
+GR
+GR
+GS
+[1 0 0 1 126.50966 346] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-6 10 moveto 
+1 -1 scale
+(20) t 
+GR
+GR
+GS
+[1 0 0 1 169.30312 346] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-6 10 moveto 
+1 -1 scale
+(40) t 
+GR
+GR
+GS
+[1 0 0 1 212.09659 346] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-6 10 moveto 
+1 -1 scale
+(60) t 
+GR
+GR
+GS
+[1 0 0 1 254.89005 346] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-6 10 moveto 
+1 -1 scale
+(80) t 
+GR
+GR
+GS
+[1 0 0 1 297.6835 346] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-8.5 10 moveto 
+1 -1 scale
+(100) t 
+GR
+GR
+GS
+[1 0 0 1 340.47696 346] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-8.5 10 moveto 
+1 -1 scale
+(120) t 
+GR
+GR
+GS
+[1 0 0 1 383.27042 346] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-8.5 10 moveto 
+1 -1 scale
+(140) t 
+GR
+GR
+GS
+[1 0 0 1 426.0639 346] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-8.5 10 moveto 
+1 -1 scale
+(160) t 
+GR
+GR
+GS
+[1 0 0 1 265.00018 360] CT
+0.149 GC
+/Helvetica 11 F
+GS
+[1 0 0 1 0 0] CT
+-35.5 11 moveto 
+1 -1 scale
+(Heat transport) t 
+GR
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+67 342 M
+67 29 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+463 342 M
+463 29 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+67 342 M
+70.96 342 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+67 289.833 M
+70.96 289.833 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+67 237.667 M
+70.96 237.667 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+67 185.5 M
+70.96 185.5 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+67 133.333 M
+70.96 133.333 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+67 81.167 M
+70.96 81.167 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+67 29 M
+70.96 29 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+463 342 M
+459.04 342 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+463 289.833 M
+459.04 289.833 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+463 237.667 M
+459.04 237.667 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+463 185.5 M
+459.04 185.5 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+463 133.333 M
+459.04 133.333 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+463 81.167 M
+459.04 81.167 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+463 29 M
+459.04 29 L
+S
+GR
+GS
+[1 0 0 1 63 342] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-6 3.5 moveto 
+1 -1 scale
+(0) t 
+GR
+GR
+GS
+[1 0 0 1 63 289.83334] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-20 3.5 moveto 
+1 -1 scale
+(0.01) t 
+GR
+GR
+GS
+[1 0 0 1 63 237.66667] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-20 3.5 moveto 
+1 -1 scale
+(0.02) t 
+GR
+GR
+GS
+[1 0 0 1 63 185.5] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-20 3.5 moveto 
+1 -1 scale
+(0.03) t 
+GR
+GR
+GS
+[1 0 0 1 63 133.33334] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-20 3.5 moveto 
+1 -1 scale
+(0.04) t 
+GR
+GR
+GS
+[1 0 0 1 63 81.16666] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-20 3.5 moveto 
+1 -1 scale
+(0.05) t 
+GR
+GR
+GS
+[1 0 0 1 63 29.00001] CT
+0.149 GC
+/Helvetica 10 F
+GS
+[1 0 0 1 0 0] CT
+-20 3.5 moveto 
+1 -1 scale
+(0.06) t 
+GR
+GR
+GS
+[0 -1 1 0 40 185.49986] CT
+0.149 GC
+/Helvetica 11 F
+GS
+[1 0 0 1 0 0] CT
+-36 -3 moveto 
+1 -1 scale
+(Frequency \(%\)) t 
+GR
+GR
+%%Trailer
+%%Pages: 1
+%%EOF

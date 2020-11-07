@@ -8,7 +8,7 @@ In rotating Rayleigh-Bénard convection, time series of heat transport data (mea
 - Filter these data from the statistically equilibrium data
 - Computed the mean convective heat transfer
 
-## Compile:
-matlab ...
+## Results:
+The anomaly detection algorithm turned out to be far too simple to flag transient data from heat transfer measurements. My next approach will consists of training a neural networks for recognition of the underlying patterns in the transitory state of rotating Rayleigh-Bénard convection. It will be interesting to see if it will recognise the transient from an already started turbulent flow (instead of from a stagnant state). See https://github.com/ajaguirreguzman/transient_recognition_neural_networks
 
 
